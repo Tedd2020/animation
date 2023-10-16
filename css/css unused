@@ -1,0 +1,17 @@
+
+.div2 {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    animation: mymove 4s linear infinite alternate; /* alternate between moving right and left */
+    left: 0; /* start at the left */
+}
+
+@keyframes mymove {
+    0% {
+        left: 0; /* start at the left */
+    }
+    100% {
+        left: calc(100% - 0px); /* move to the right edge */
+    }
+}
